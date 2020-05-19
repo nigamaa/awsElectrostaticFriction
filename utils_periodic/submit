@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#SBATCH --ntasks 8
+#SBATCH --output cnt
+#SBATCH --job-name=C10_0K_U1K
+#SBATCH --time=72:00:00
+
+source /etc/profile
+module load  anaconda3-5.0.1
+
+mpirun python plotUtils.py
